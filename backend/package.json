@@ -4,8 +4,10 @@
   "description": "Backend for Bug-Tracking project",
   "main": "server.js",
   "scripts": {
-    "server": "nodemon server.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "client": "cd ../client && npm start",
+    "start": "nodemon server.js",
+    "server": "npm start",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
   },
   "author": "Miguel Menjivar",
   "license": "ISC",
@@ -14,6 +16,7 @@
     "mongoose": "^5.9.2"
   },
   "devDependencies": {
+    "concurrently": "^5.1.0",
     "nodemon": "^2.0.2"
   }
 }
