@@ -4,6 +4,7 @@
   "description": "Backend for Bug-Tracking project",
   "main": "server.js",
   "scripts": {
+    "server": "nodemon server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Miguel Menjivar",
@@ -11,5 +12,8 @@
   "dependencies": {
     "express": "^4.17.1",
     "mongoose": "^5.9.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.2"
   }
 }
